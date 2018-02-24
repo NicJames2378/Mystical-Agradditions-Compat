@@ -1,0 +1,6 @@
+1.1
++Added ability to grow tier 6 inferium seeds in Immersive Engineering's gardening cloche.
++Made tier 6 inferium seeds require inferium essence blocks to grow for balance purposes
+
+1.0
++Initial release. Code added to GitHub.

@@ -1,0 +1,68 @@
+{
+  "com/nicjames2378/MystAgradCompat/Main": {
+    "name": "com/nicjames2378/MystAgradCompat/Main",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "com/nicjames2378/MystAgradCompat/Main",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "dependencies": {
+            "value": "required-after:mysticalagradditions;required-after:immersiveengineering"
+          },
+          "modid": {
+            "value": "mystagradcompat"
+          },
+          "name": {
+            "value": "Mystical Agradditions Compat"
+          },
+          "version": {
+            "value": "1.1"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "com.nicjames2378.MystAgradCompat.proxy.ClientProxy"
+          },
+          "serverSide": {
+            "value": "com.nicjames2378.MystAgradCompat.proxy.CommonProxy"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "PreInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "Init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "PostInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      }
+    ]
+  },
+  "com/nicjames2378/MystAgradCompat/proxy/ClientProxy": {
+    "name": "com/nicjames2378/MystAgradCompat/proxy/ClientProxy",
+    "interfaces": [
+      "com/nicjames2378/MystAgradCompat/proxy/CommonProxy"
+    ]
+  }
+}
